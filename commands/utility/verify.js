@@ -15,9 +15,9 @@ module.exports = {
       const role = interaction.guild.roles.cache.get(roleId);
       const discordUser = interaction.guild.members.cache.get(discordID);
       discordUser.roles.add(role);
-      await interaction.reply('Lichess user role granted! Thanks for using Lichess!');
+      await interaction.reply({ content: 'User role granted! Thanks for using Lichess!', ephemeral: true });
     } else {
-      await interaction.reply(`Login failure.`);
+      await interaction.reply({ content: 'Login cancelled.', ephemeral: true });
     }
   }
 };
