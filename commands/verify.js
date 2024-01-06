@@ -1,6 +1,6 @@
 const { SlashCommandBuilder } = require('discord.js');
-const { verifyUser } = require('../../checkLichessUser');
-const { roleId } = require('../../config.json')
+const { verifyUser } = require('../checkLichessUser');
+const { roleId } = require('../config.json')
 
 module.exports = {
   data: new SlashCommandBuilder()
